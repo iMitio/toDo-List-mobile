@@ -13,12 +13,7 @@ export interface Task {
 }
 
 export function Home() {
-  const [task, setTask] = useState<Task[]>([
-    {id: 1, name: "ReactJS", taskChecked: true},
-    {id: 2, name: "React Native", taskChecked: true},
-    {id: 3, name: "NodeJS", taskChecked: false},
-
-  ])
+  const [task, setTask] = useState<Task[]>([])
 
  
 

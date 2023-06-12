@@ -19,14 +19,17 @@ export function TaskList({task, handleRemove, handleCompleted}: Props) {
           <Text style={styled.titleCreated}>Criadas</Text>
           <View style={styled.countBox}>
             <Text style={styled.count}>
-            {task.filter((item)=>item.taskChecked!=false).length}
+             {task?.length ? task.length : 0}
             </Text>
           </View>
         </View>
         <View style={styled.headerContent}>
           <Text style={styled.titleConcluded}>Concluídas</Text>
           <View style={styled.countBox}>
-            <Text style={styled.count}>0</Text>
+            <Text style={styled.count}>
+            {task.filter((item)=>item.taskChecked!=false).length}
+
+            </Text>
           </View>
         </View>
       </View>

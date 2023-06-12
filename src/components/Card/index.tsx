@@ -13,7 +13,7 @@ interface Props{
   check: boolean;
   task: Task;
   handleTrash: (id: Task) => void;
-  handleCompleted: (e:Task) => void;
+  handleCompleted: (check:Task) => void;
 }
 
 export function Card({check, task, handleCompleted, handleTrash}: Props) {
